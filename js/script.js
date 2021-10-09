@@ -106,6 +106,7 @@ keys.addEventListener('click', (event)=>{
         case '-':
         case '=':
         case '/':
+        case '*':
             handleOperator(value);
             break;
         case '.':
