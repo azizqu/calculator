@@ -53,7 +53,7 @@ function handleOperator(nextOperator){
     } else if(operator){
         const result = calculate(firstOperand, inputValue, operator);
 
-        calculator.displayVal = String(result);
+        calculator.displayVal = `${parseFloat(result.toFixed(7))}`
         calculator.firstOperand = result;
     }
     calculator.secondOperand = true;
